@@ -1,0 +1,25 @@
+---
+description: Yma web presentation project — read docs before any changes
+alwaysApply: true
+---
+
+# Yma Presentation Template
+
+This is a web presentation built with React + Vite + framer-motion.
+
+Before making any changes, read these files:
+0. `README.md` - main file with documentation.
+1. `docs/AGENT.md` — project structure, slide anatomy, animation system, CSS classes
+2. `docs/DESIGN.md` — branding, colors, fonts, spacing, do's and don'ts
+
+Key rules:
+- Wrap every visible element in `<A>` for scroll-triggered animations
+- try not to generate SVG animations in code — use `<A>` variants, CSS `@keyframes`, or framer-motion hooks
+- Use design tokens from `styles.css` — never hardcode colors or fonts
+- After adding/removing slides, update `SLIDE_COUNT` in `App.jsx`
+
+Template repo: https://github.com/Yma-Health/presentation_template.git
+
+**CRITICAL — git safety:**
+NEVER push to `presentation_template` repo. Before any git push, check `git remote -v`.
+If origin points to `presentation_template` — create a NEW repo instead (see README for details).
