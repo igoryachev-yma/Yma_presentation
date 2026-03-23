@@ -2,12 +2,12 @@ import { useRef, useState, useEffect } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const lines = [
-  { text: 'First closing line goes here.', delay: 0, cls: 'typewriter-line-1' },
-  { text: 'Second line with the key message.', delay: 2000, cls: 'typewriter-line-2' },
-  { text: "Let's make it happen.", delay: 4000, cls: 'typewriter-line-3' },
+  { text: 'Thank you for your attention.', delay: 0, cls: 'typewriter-line-1' },
+  { text: 'Yma Health', delay: 2000, cls: 'typewriter-line-2' },
+  { text: 'ymahealth.com · Book a demo', delay: 3500, cls: 'typewriter-line-3' },
 ]
 
-export default function ClosingSlide() {
+export default function S30Close() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: false, amount: 0.5 })
   const [activeLines, setActiveLines] = useState(0)
